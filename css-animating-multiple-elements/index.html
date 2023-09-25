@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Loading Animation</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* This centers vertically */
+        perspective: 1000px; /* Adjust the perspective depth */
+      }
+      .animated-element {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(156, 73, 87);
+        border-radius: 20%;
+        position: absolute;
+        opacity: 0%;
+        animation: loading 2s cubic-bezier(.2,.95,.55,-0.14) 0s infinite;
+      }
+
+      .animated-element:nth-child(1){
+        animation-delay: .2s;
+      }
+      .animated-element:nth-child(2){
+        animation-delay: .4s;
+      }
+      .animated-element:nth-child(3){
+        animation-delay: .6s;
+      }
+      .animated-element:nth-child(4){
+        animation-delay: .8s;
+      }
+      .animated-element:nth-child(5){
+        animation-delay: 1s;
+      }
+
+      @keyframes loading{
+        0% {
+            opacity: 100%;
+            transform: rotateZ(0deg) translateX(100px) rotateY(50deg) scale(500%);
+            background-color: greenyellow;
+        }
+        50%{
+            transform: rotateZ(180deg) translateX(50px) rotateY(0deg) scale(50%);
+            background-color: coral;
+        }
+        100% {
+            opacity: 100%;
+            transform: rotateZ(360deg) translateX(100px) rotateY(50deg) scale(500%);
+            background-color: blueviolet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Loading Animation</h1>
+    <div class="container">
+        <div class="animated-element"></div>
+        <div class="animated-element"></div>
+        <div class="animated-element"></div>
+        <div class="animated-element"></div>  
+        <div class="animated-element"></div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>
