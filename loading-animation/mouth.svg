@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="mouth" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #22b573;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 17px;
+      }
+
+      #mouth {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 5s linear backwards;
+      }
+
+      @keyframes dash {
+        to { 
+          stroke-dashoffset: 0;
+        }
+      }
+
+
+    </style>
+  </defs>
+  <circle class="cls-1" cx="707.08157" cy="384.04469" r="256.52955"/>
+</svg>

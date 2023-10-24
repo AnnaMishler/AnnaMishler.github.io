@@ -5,80 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loading Smile</title>
     <style>
-        html{
-            background-color: darkcyan;
-        }
+       
       .container2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80vh; 
+        height: 50vh; 
         perspective: 1000px; 
       }
       .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 10vh; 
+        height: 5vh; 
         perspective: 1000px; 
-      }
-
-      .eyes {
-        margin: 40px;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        background: turquoise;
-        background-repeat: no-repeat;
-        position: relative;
-      }
-
-      .smile {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: turquoise;
-        background-repeat: no-repeat;
-        position: relative;
-        animation: rotateA 2s ease-in-out 0s infinite;
-      }
-
-      .smile:nth-child(1){
-        animation-delay: .2s;
-      }
-      .smile:nth-child(2){
-        animation-delay: .3s;
-      }
-      .smile:nth-child(3){
-        animation-delay: .4s;
-      }
-      
-      
-
-      @keyframes rotateA{
-        0% {
-            transform: rotateZ(0deg) translateX(100px) rotateY(50deg);
-            
-        }
-        50%{
-            transform: rotateZ(180deg) translateX(50px) rotateY(0deg);
-        }
-        100% {
-            transform: rotateZ(360deg) translateX(100px) rotateY(50deg);
-        }
       }
     </style>
   </head>
   <body>
     <div class="container2">
         <div class="eyes"></div>
-        <div class="eyes"></div>
     </div>
     <div class="container">
-        <div class="smile"></div>
-        <div class="smile"></div>
-        <div class="smile"></div>
+      <?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .tongue {
+        stroke: #ff7bac;
+      }
+
+      .tongue, .cls-2, .cls-3, .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .tongue, .cls-3 {
+        stroke-width: 19px;
+      }
+
+      .tongue, .cls-5 {
+        fill: #ff7bac;
+      }
+
+      .cls-2 {
+        stroke-width: 26px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #5a9378;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+        stroke-width: 9px;
+      }
+
+      .cls-6, .cls-7, .cls-5, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-7 {
+        fill: #5a9378;
+      }
+
+      .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-5{
+        opacity: 0%;
+      }
+      .tongue{
+        position: absolute;
+        justify-content: center;
+        animation: boo 4s linear infinite;
+      }
+
+      @keyframes boo {
+        0% {
+           opacity: 0%; 
+
+        }
+        50%{
+          opacity: 0%;
+        }
+        100% {
+          opacity: 0%;
+        }
+      }
+
+      #sad{
+        stroke-dasharray: 800;
+        stroke-dashoffset: 1000;
+        animation: saad 3s ease-in-out 6.3s alternate 2;
+      }
+      @keyframes saad{
+        0% {
+          stroke-dashoffset: 800;
+       }
+       
+        100% {
+          stroke-dashoffset: 0;
+       }
+      }
+
+      #sup{
+        stroke-dasharray: 1800;
+        stroke-dashoffset: 2000;
+        animation: supr 3s ease-in-out alternate 2;
+        opacity: 100%;
+        }
+        @keyframes supr {
+          0% {
+            stroke-dashoffset: 1800;
+          }
+          100% {
+            stroke-dashoffset: 0;
+         }
+        }
+
+      #D{
+        stroke-dasharray: 1800;
+        stroke-dashoffset: 2000;
+        animation: hap 3s ease-in-out 12.3s alternate 2;
+      }
+      @keyframes hap{
+        0% {
+          stroke-dashoffset: 1822;
+       }
+        100% {
+          stroke-dashoffset: 0;
+       }
+      }
+
+      
+
+    </style>
+  </defs>
+  <circle class="cls-3" id="sup" cx="695.07626" cy="435.86539" r="195.16365"/>
+  <circle class="cls-2" cx="465.5" cy="149.5" r="64"/>
+  <circle class="cls-2" cx="908.5" cy="149.5" r="64"/>
+  <circle class="cls-4" cx="465.5" cy="149.5" r="64"/>
+  <circle class="cls-4" cx="908.5" cy="149.5" r="64"/>
+  <circle class="cls-8" cx="431" cy="118" r="22"/>
+  <circle class="cls-8" cx="880" cy="118" r="22"/>
+  <circle class="cls-8" cx="453" cy="140" r="13"/>
+  <circle class="cls-8" cx="902" cy="140" r="13"/>
+  <circle class="cls-6" cx="647" cy="207" r="13"/>
+  <circle class="cls-6" cx="733" cy="207" r="13"/>
+  <polygon class="cls-7" id="toplid" points="529.2108 106.79076 402.61696 108.82682 442.63489 82.21814 478.57951 78.72809 507.93643 90.79591 529.2108 106.79076"/>
+  <polygon class="cls-7" id="toplid" points="972.23084 107 845.637 109.03605 885.65493 82.42737 921.59954 78.93733 950.95646 91.00515 972.23084 107"/>
+  <circle class="tongue" cx="694.09274" cy="430.63772" r="57.74783"/>
+  <polygon class="cls-7" id="bottomlid" points="529.19115 194.49545 402.59731 192.45939 442.61524 219.06807 478.55986 222.55812 507.91678 210.4903 529.19115 194.49545"/>
+  <polygon class="cls-7" id="bottomlid" points="972.21119 194.28621 845.61735 192.25016 885.63528 218.85884 921.57989 222.34888 950.93681 210.28106 972.21119 194.28621"/>
+  <path class="cls-5" d="m777.50255,452.86269s96.49745,136.79207,137.49745,124.96469,52.65547-63.44367-30.17226-156.13553"/>
+  <path class="cls-3" id="D" d="m1019.01063,265.25884c0,107.78591-149.4526,195.16365-333.81172,195.16365s-333.81172-87.37774-333.81172-195.16365"/>
+  <path class="cls-3" id="sad" d="m499.81748,436.73917c0-107.78589,87.37776-195.16361,195.16369-195.16361s195.16369,87.37772,195.16369,195.16361"/>
+</svg>
       </div>
     </div>
   </body>
 </html>
+

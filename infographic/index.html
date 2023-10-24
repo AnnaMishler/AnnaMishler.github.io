@@ -12,7 +12,12 @@
 
     </style>
   </head>
+
   <body>
+    <script>
+
+
+    </script>
     <div class="container">
         <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395 608">
@@ -63,7 +68,8 @@
       }
 
 
-      
+
+
       #bar-01 {
         transform: scaleX(0);
         transform-origin: left;
@@ -82,8 +88,8 @@
 
       #data-01:hover > #bar-01 {
         transform: scaleX(1);             
-        
         }
+    
     #data-01:hover > #shadow-01 {
         opacity: 1;
         transition: all 1s linear;                                               
@@ -103,26 +109,85 @@
                 transform-origin: left;
                 transform-box: fill-box;
                 transition: all 1s linear;
-        
               }
-        
         #shadow-02{
                 opacity: 0;
               }
-        
         #arrows-02{ 
                 opacity: 0;
               }
-        
-        #data-02:target > #bar-01 {
+        #data-02:target > #bar-02 {
                 transform: scaleX(1);             
-                
                 }
-        #data-02:target > #shadow-01 {
+        #data-02:target > #shadow-02 {
                 opacity: 1;
                 transition: all 1s linear;                                               
                  }
-        #data-02:target > #arrows-01 {
+        #data-02:target > #arrows-02 {
+                    opacity: 1;
+                    transition: all 1s linear;                                               
+                     }
+                     
+                     /*JS click*/
+        #bar-03 {
+                transform: scaleX(0);
+                transform-origin: left;
+                transform-box: fill-box;
+                transition: transform 0.3s ease-in-out;
+              }
+        #shadow-03{
+                 opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+              }
+        #arrows-03{ 
+                transition: opacity 0.3s ease-in-out;
+              }
+
+        #data-03{
+            transform: scale(0);
+         }            
+        #data-03 > .active{
+            transform: initial;
+        }
+                  
+
+        /*JS scroll to view*/           
+        #bar-04 {
+                transform: scaleX(0);
+                transform-origin: left;
+                transform-box: fill-box;
+                transition: opacity 0.3s ease-in-out;
+              }
+        #shadow-04{
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+              }
+        #arrows-04{ 
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+              }
+      
+
+        #bar-05 {
+                transform: scaleX(0);
+                transform-origin: left;
+                transform-box: fill-box;
+                transition: all 1s linear;
+              }
+        #shadow-05{
+                opacity: 0;
+              }
+        #arrows-05{ 
+                opacity: 0;
+              }
+        #data-05:hover > #bar-05 {
+                transform: scaleX(1);             
+                }
+        #data-05:hover > #shadow-05 {
+                opacity: 1;
+                transition: all 1s linear;                                               
+                 }
+        #data-05:hover > #arrows-05 {
                     opacity: 1;
                     transition: all 1s linear;                                               
                      }
@@ -481,7 +546,7 @@
       <path class="cls-13" d="m56.04,418.65c0,5.03,9.11,15.68,9.11,15.68,0,0,9.11-10.65,9.11-15.68s-4.08-9.11-9.11-9.11-9.11,4.08-9.11,9.11Zm5.51,0c0-1.99,1.61-3.6,3.6-3.6s3.6,1.61,3.6,3.6-1.61,3.6-3.6,3.6-3.6-1.61-3.6-3.6Z"/>
     </g>
   </g>
-  <g id="data-03">
+  <g id="data-03 active" >
     <path id="bar-03" class="cls-11" d="m326.02,327.1c0-12.87-10.43-23.3-23.3-23.3H77.38c-12.87,0-23.3,10.43-23.3,23.3h0c0,12.87,10.43,23.3,23.3,23.3h225.34c12.87,0,23.3-10.43,23.3-23.3h0Z"/>
     <g id="text-03">
       <g>
@@ -788,6 +853,8 @@
     <g id="shadow-02">
       <path class="cls-9" d="m101.31,235.65c0-18.36-14.89-33.25-33.26-33.25s-33.25,14.89-33.25,33.25,14.89,33.26,33.25,33.26,33.26-14.89,33.26-33.26Z"/>
     </g>
+    ```html
+<a href="#data-02" style="background: darkorange">
     <g id="icon-02">
       <circle class="cls-12" cx="65.16" cy="233.37" r="31.71"/>
       <circle class="cls-5" cx="65.16" cy="233.37" r="25.09"/>
@@ -795,6 +862,8 @@
       <path class="cls-11" d="m71.02,226.95h-11.16l-6.11,7.93,5.12,7.16,3.39.28,1.2.74s1.9.88,3.92.41c2.02-.47,5.44-3.11,5.44-3.11l3.17-4.11-4.98-9.3Z"/>
       <path class="cls-12" d="m74.66,227.35c-1.28-4.29-5.25-7.42-9.95-7.42-5.03,0-9.22,3.58-10.17,8.33-2.35,1.46-3.92,4.06-3.92,7.03,0,4.56,3.7,8.26,8.26,8.26,1.33,0,2.58-.31,3.68-.87.29.15.59.27.9.38l-6.52-6.52h4.8v-7.22h7.77v7.22h4.8l-6.93,6.93c.67-.09,1.32-.27,1.93-.51.95.38,1.98.59,3.06.59,4.56,0,8.26-3.7,8.26-8.26,0-3.77-2.53-6.95-5.97-7.94Z"/>
     </g>
+</a>
+
   </g>
   <g id="data-01">
     <path id="bar-01" class="cls-8" d="m327.74,139.23c0-12.87-10.43-23.3-23.3-23.3H77.38c-12.87,0-23.3,10.43-23.3,23.3h0c0,12.87,10.43,23.3,23.3,23.3h227.06c12.87,0,23.3-10.43,23.3-23.3h0Z"/>
